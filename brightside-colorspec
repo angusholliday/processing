@@ -1,0 +1,66 @@
+int x = 0;
+int y = 0;
+int r = 255;
+int g = 0;
+int b = 0;
+
+void setup() {
+  size(1531,800);
+   noStroke(); 
+   background(0);
+
+   for (int k = 0;  k < width;  k++){
+     for(int z = 0; z < 255; z++)
+     {
+      fill(r, g, b);
+      rect(x,y,1444,10);
+      g++;
+      x++;
+  
+     }
+     
+     
+     
+     while(r > b){
+      fill(r, g, b);
+       rect(x, y, 1122, 1);
+      r--;
+      x++; 
+     }
+     while(g > b){
+      fill(r, g, b);
+      rect(x, y, 1211, 1); 
+      b++;
+      x++;
+     }
+     while(g > r){
+      fill (r, g, b);
+       rect(x, y, 1111, 1); 
+       g--;
+       x++;
+     }
+     while(r < b){
+         fill (r, g, b);
+       rect(x, y, 1011, 1); 
+       r++;
+       x++;
+     }
+     
+       while(b > g){
+       fill (r, g, b);
+       rect(x, y, 1, 133); 
+       b--;
+        x++;
+     }
+     y++;
+    g++;
+    b++;
+    x=1;
+   }
+ 
+   
+}
+
+void draw() {
+  
+}
